@@ -1,0 +1,61 @@
+/* By: Abdulganiyu Babatunde, bababdulg@gmail.com, 6474505223
+Date created: 9/14/2024
+Date last modified: 9/14/2024 */
+
+body{
+  font-family: Arial, sans-serif;
+}
+
+.colour-picker-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1{
+  margin:50px;
+  font-size: 3rem;
+}
+.colour-display {
+  border-radius: 25px;
+  padding: 10px 20px;
+  border: 1px solid hsl(0, 0%, 80%);
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center; /* Aligns items to the center on the y-axis */
+  justify-content: center; /* Aligns content to the center on the x-axis */
+  margin-bottom: 25px;
+  transition: 0.2s ease; /* Delay before colour is updated */
+}
+
+.colour-display p{
+  color: hsl(0, 0%, 20%);
+  font-size: 2rem;
+  text-align: center;
+}
+
+label{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="color"]{
+  width: 75px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 3px solid hsl(0, 0%, 80%);
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
